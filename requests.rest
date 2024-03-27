@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemVlc2hhbmFuc2FyaSIsImlhdCI6MTcxMTUzNTQzMiwiZXhwIjoxNzExNTM1NDQ3fQ.7Rmr7mCV1vyHZXRwWB1VktDW1yeKohl_vdDpPkTWoRY
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemVlc2hhbmFuc2FyaSIsImlhdCI6MTcxMTUzNjIzNX0.frX0BUbz70ApshdpFEVWal_LBwUgNuxCTru_zj34WAA"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": 
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemVlc2hhbmFuc2FyaSIsImlhdCI6MTcxMTUzNjIzNX0.frX0BUbz70ApshdpFEVWal_LBwUgNuxCTru_zj34WAA"
+}
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "zeeshanansari",
+    "password": "12345678"
+}
